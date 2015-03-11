@@ -1,0 +1,13 @@
+Este MODULO es una copia del modulo jdcontact, que lo descargamos de :
+<authorEmail>info@j-download.com</authorEmail>
+<authorUrl>www.j-download.com</authorUrl>
+<version>1.0.4</version>
+
+LAS DIFERENCIAS:
+
+- Eliminamos libreria de jquery que traía y cargaba, la cual nos daba problemas con otros componentes o modulos.
+- Ordenamos los campos y creamos un campo más el de texto LOPD.
+- Añadimos en parametros opciones para mostrar ( SI/NO ) algunos campos.
+
+
+

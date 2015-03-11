@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site"
+	method="upgrade">
+	<name>Formulario Soluciones Vigo</name>
+	<author>Soluciones Vigo </author>
+	<creationDate>10 Dic 2014</creationDate>
+	<copyright>Licencia Libre.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@solucionesvigo.es</authorEmail>
+	<authorUrl>www.solucionesvigo.es</authorUrl>
+	<version>1.0.-traducido-por-olalla</version>
+	<description>MOD_SVFORMULARIO_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_svformulario">mod_svformulario.php</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>mod_svformulario.xml</filename>
+	</files>
+	<languages folder="language">
+		<language tag="es-ES">es-ES/es-ES.mod_svformulario.ini</language>
+		<language tag="es-ES">es-ES/es-ES.mod_svformulario.sys.ini</language> 
+		<language tag="en-GB">en-GB/en-GB.mod_svformulario.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_svformulario.sys.ini</language> 
+
+    </languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_LOGIN" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+				name="nombre" 
+				type="radio" 
+				class="btn-group btn-group-yesno"
+				default="1" 
+				label="MOD_SVFORMULARIO_LNAME" 
+				description="MOD_SVFORMULARIO_LNAME">
+			    <option value="1">JYES</option>
+			    <option value="0">JNO</option>
+				</field>
+				
+				<field 
+				name="telephone" 
+				type="radio" 
+				class="btn-group btn-group-yesno"
+				default="1" 
+				label="MOD_SVFORMULARIO_LTELEPHONE" 
+				description="MOD_SVFORMULARIO_LTELEPHONE">
+			    <option value="1">JYES</option>
+			    <option value="0">JNO</option>
+				</field>
+				
+				<field 
+				name="subject" 
+				type="radio" 
+				class="btn-group btn-group-yesno"
+				default="1" 
+				label="MOD_SVFORMULARIO_LSUBJECT" 
+				description="MOD_SVFORMULARIO_LSUBJECT">
+			    <option value="1">JYES</option>
+			    <option value="0">JNO</option>
+				</field>
+								
+				<field 
+				name="showdepartment" 
+				type="radio" 
+				class="btn-group btn-group-yesno"
+				default="1" 
+				label="MOD_SVFORMULARIO_LDEPARTMENT" 
+				description="MOD_SVFORMULARIO_DDEPARTMENT">
+			    <option value="1">JYES</option>
+			    <option value="0">JNO</option>
+				</field>
+								
+				<field 
+				name="sales_address"
+				type="text" 
+				default="sales@yourdomain.com"
+				size="50" 
+				label="MOD_SVFORMULARIO_LSALES" 
+				description="MOD_SVFORMULARIO_DSALES" />
+				
+				<field 
+				name="support_address" 
+				type="text" 
+				default="support@yourdomain.com" 
+				size="50" 
+				label="MOD_SVFORMULARIO_LSUPPORT" 
+				description="MOD_SVFORMULARIO_DSUPPORT" />
+            
+				<field 
+				name="billing_address" 
+				type="text" 
+				default="facturacion@yourdomain.com" 
+				size="50" 
+				label="MOD_SVFORMULARIO_LBILLING" 
+				description="MOD_SVFORMULARIO_DBILLING"/>
+		    
+				
+				<field 
+				name="showsendcopy" 
+				type="radio" 
+				class="btn-group btn-group-yesno"
+				default="1" 
+				label="MOD_SVFORMULARIO_LSELFCOPY" 
+				description="MOD_SVFORMULARIO_LSELFCOPY">
+			    <option value="1">JYES</option>
+			    <option value="0">JNO</option>
+				</field>
+				
+				<field 
+				name="humantestpram" 
+				type="radio" 
+				class="btn-group btn-group-yesno"
+				default="1" 
+				label="MOD_SVFORMULARIO_LHUMANTEST" 
+				description="MOD_SVFORMULARIO_DHUMANTEST">
+			    <option value="1">JYES</option>
+			    <option value="0">JNO</option>
+				</field>
+				
+				<field 
+				name="selectlopd" 
+				type="radio" 
+				class="btn-group btn-group-yesno"
+				default="1" 
+				label="MOD_SVFORMULARIO_LSELECTLOPD" 
+				description="MOD_SVFORMULARIO_DSLELECTLOPD">
+			    <option value="1">JYES</option>
+			    <option value="0">JNO</option>
+				</field>
+				
+				<field 
+				name="lopd" 
+				type="textarea" 
+				default="Sus datos personales serán incorporados a un fichero titularidad de NOMBRE EMPRESA con la finalidad de gestionar su propuesta. Usted puede ejercitar sus derechos de acceso, rectificación, cancelación y oposición dirigiéndose a NOMBRE EMPRESA Y DIRECCIÓN o enviando un email a la dirección info@suweb.com"
+				label="MOD_SVFORMULARIO_LLOPD" 
+				description="MOD_SVFORMULARIO_DLOPD"/>
+				
+				
+
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					ype="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="0"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
