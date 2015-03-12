@@ -10,4 +10,4 @@ LAS DIFERENCIAS:
 - Añadimos en parametros opciones para mostrar ( SI/NO ) algunos campos.
 
 
-
+estoy probando con fetch y merge, fusionando archivos
